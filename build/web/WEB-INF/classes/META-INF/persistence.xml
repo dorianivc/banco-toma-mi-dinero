@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="d-curly-slayerPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Modelos.Cajero</class>
+    <class>Modelos.Cuenta</class>
+    <class>Modelos.Vinculadas</class>
+    <class>Modelos.Cliente</class>
+    <class>Modelos.Moneda</class>
+    <class>Modelos.Movimiento</class>
+    <class>Modelos.Usuario</class>
+    <class>Datos.Cajero</class>
+    <class>Datos.Cliente</class>
+    <class>Datos.Usuario</class>
+    <class>Datos.Vinculadas</class>
+    <class>Datos.Moneda</class>
+    <class>Datos.Movimiento</class>
+    <class>Datos.Cuenta</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://dorian-database.cy1hmbiynvfm.us-east-1.rds.amazonaws.com:3306/Banco?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="banco"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="banco"/>
+    </properties>
+  </persistence-unit>
+</persistence>
